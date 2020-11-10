@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    position: relative;
+    height: 100vh;
+    color: $text-color;
+}
+
+.board-wrapper {
+    width: 800px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $white-color;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    border-radius: 5%;
+}
+
+.game-panel {
+    width: 70%;
+    float: left;
+    height: 600px;
+    padding: 80px;
+    background-color: #f7f7f7;
+}
+
+.score-panel {
+    width: 30%;
+    float: left;
+    height: 600px;
+    padding: 80px 20px 80px 20px;
+}
+
+.panel-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.panel-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: $red-color;
+    margin-bottom: 130px;
+}
+
+.panel-action {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.panel-box {
+    color: $white-color;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.panel-current-box {
+    background-color: $green-color;
+    color: $white-color;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.panel-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #222;
+}
+
+.panel-current-score {
+    font-size: 30px;
+}
+
+.panel-button {
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.3);
+}
+
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.board-container{
+    width: 260px;
+    height: 260px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid $black-color;
+    background-color: $black-color;
+}
+
+.center {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: $black-color;
+    top: 80px;
+    left: 80px;
+    border-radius: 50%;
+    color: $white-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8em;
+}
+
+.items {
+    position: absolute;
+    width: 47%;
+    height: 47%;
+    float: left;
+    transition-duration: 0.4;
+}
+
+.itembase {
+    background-color: $item-base-color !important; 
+}
+
+.item1 {
+    background-color: $item-1-color;
+    top: 0;
+    left: 0;
+}
+
+.item-led1 {
+    box-shadow: $item-led-1-color 0px 0px 25px;
+}
+
+.item2 {
+    background-color: $item-2-color;
+    top: 0;
+    right: 0;
+}
+
+.item-led2 {
+    box-shadow: $item-led-2-color 0px 0px 25px;
+}
+
+.item3 {
+    background-color: $item-3-color;
+    bottom: 0;
+    left: 0;
+}
+
+.item-led3 {
+    box-shadow: $item-led-3-color 0px 0px 25px;
+}
+
+.item4 {
+    background-color: $item-4-color;
+    bottom: 0;
+    right: 0;
+}
+
+.item-led4 {
+    box-shadow: $item-led-4-color 0px 0px 25px;
+}
+
+label {
+    margin-left: 10px;
+}
+
+button {
+    color: $text-color;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.button-green {
+    background-color: $green-color;
+    color: $white-color;
+}
+
+.pointer {
+    cursor: pointer;
+}
