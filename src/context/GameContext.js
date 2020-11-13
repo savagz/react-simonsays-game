@@ -25,7 +25,7 @@ const GameProvider = (props) => {
             if( (gamemoves.substring(0, playermoves.length)) === playermoves ){
                 if(gamemoves.length === playermoves.length){
                     resetPlayerMoves('');
-                    addGameMove();
+                    addGameMove( Number(gamemoves.substring(gamemoves.length-1)) );
                     setGameStatus({state: 'START', lastpos: 0, turn: 'GAME'});
                 }
             }else{
@@ -44,7 +44,7 @@ const GameProvider = (props) => {
         // Reset Player Moves
         resetPlayerMoves('');
         // First Move
-        addGameMove();
+        addGameMove(0);
         
         setGameStatus({state: 'START', lastpos: 0, turn: 'GAME'});
     }

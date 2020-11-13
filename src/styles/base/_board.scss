@@ -206,3 +206,7 @@ button {
 .pointer {
     cursor: pointer;
 }
+
+body.swal2-height-auto {
+    height: 100vh !important;
+}

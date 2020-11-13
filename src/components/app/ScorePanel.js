@@ -1,4 +1,6 @@
-import React, { useContext } from 'react'
+import React, { useContext } from 'react';
+import Swal from 'sweetalert2';
+
 import { GameContext } from '../../context/GameContext';
 
 export const ScorePanel = () => {
@@ -7,7 +9,11 @@ export const ScorePanel = () => {
     const { level, score } = gameScore;
     
     const handleInfoButton = () => {
-        console.log('Click Info...');
+        Swal.fire({
+            title: 'React Says',
+            text: `Based on Simon Says Game. Developed by: Samuel Vargas. © 2020`,
+            icon: 'info'
+        });
     }
 
     return (
